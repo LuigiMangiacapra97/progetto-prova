@@ -1,0 +1,20 @@
+runtime: python27
+api_version: 1
+threadsage: yes
+
+handlers:
+  - url: /
+    stati_file: dist/progetto-prova/index.html
+    upload: dist/progetto-prova/index.html
+  - url: /
+    stati_dir: dist/progetto-prova
+
+skip_files:
+  - e2e/
+  - node_modules/
+  - src/
+  - ^(.*/)?\..*$
+  - ^(.*/)?.*\.json$
+  - ^(.*/)?.*\.md$
+  - ^(.*/)?.*\.yaml
+  - ^LICENSE
